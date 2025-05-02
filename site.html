@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaston - Formations et Services</title>
+    <style>
+        /* Style général */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* En-tête */
+        header {
+            text-align: center;
+            background-color: #2e8b57;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+        }
+
+        header h1 {
+            margin: 15px 0;
+            font-size: 2.5em;
+        }
+
+        /* Section formations et services */
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #2e8b57;
+            margin-bottom: 15px;
+        }
+
+        .items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        .item h3 {
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .item-description {
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* Section contact */
+        .contact {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .contact form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .contact form input, 
+        .contact form select, 
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 1em;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+		footer {
+		text-align: center;
+		padding: 20px;
+		background-color: #333;
+		color: #fff;
+		}
+</style>
+</head>
+<body>
+
+    <!-- En-tête avec photo et nom -->
+    <header>
+        <img src="C:\Users\gasto\Documents\Mon site Web\gas.JPG" width="550" alt="Photo de Gaston">
+        <h1>GASTON N3 SERVICES</h1>
+        <p>Expert en formations numériques et services en ligne</p>
+    </header>
+
+    <!-- Section Formations -->
+    <section class="content">
+        <center><h2>FORMATIONS</h2></center>
+        <div class="items">
+            <div class="item" onclick="toggleDescription('youtube')">
+                <center><h3>Formation YouTube</h3></center>
+                <div class="item-description" id="youtube">
+                    <img src="C:\Users\gasto\Documents\Mon site Web\you.JPG" width="550" alt="Formation YouTube">
+					<img src="C:\Users\gasto\Documents\Mon site Web\tube.JPG" width="550" alt="Formation YouTube">
+                    <p> <b> Formation YouTube 100% Pratique - Devenez Créateur à Succès en Afrique !</b> 
+<br>
+<br>
+Êtes-vous prêt à transformer votre passion en profit ? Rejoignez notre formation YouTube 100% pratique
+ et découvrez toutes les clés pour réussir sur la plateforme la plus populaire au monde !📹 Ce que vous apprendrez :  
+ <br>
+ <br>
+<b>- Créer votre chaîne YouTube</b> : Suivez nos étapes simples et efficaces pour lancer votre propre chaîne, spécialement 
+conçue pour le marché africain. 
+<br>
+<br>
+<b>- Paramétrage de votre chaîne</b> : Découvrez comment optimiser les paramètres de votre 
+chaîne pour attirer un maximum d'abonnés et améliorer votre visibilité.
+<br>
+<br>
+ <b>- Rédaction de descriptions percutantes</b>: Apprenez à rédiger des descriptions captivantes qui incitent les utilisateurs à regarder
+ vos vidéos et à s'abonner.  
+ <br>
+<br>
+<b>- Écriture de scripts engageants</b> : Maîtrisez l'art de l'écriture de scripts pour vos vidéos afin de maintenir l'intérêt
+ de votre audience du début à la fin.
+<br>
+<br> 
+ <b>- Publication efficace</b> : Découvrez les meilleures pratiques pour publier vos vidéos et maximiser vos vues grâce à des 
+ stratégies testées et prouvées.
+ <br>
+<br>
+<b> Pourquoi choisir notre formation ? </b>
+<br>
+<br> 
+Cette formation est conçue pour être 100% pratique, vous permettant d'appliquer directement ce que vous apprenez.
+ Que vous soyez débutant ou que vous ayez déjà des vidéos en ligne, nous vous guiderons à chaque étape pour garantir votre succès sur YouTube.
+<br>
+<br>
+<b> Inscrivez-vous dès maintenant et lancez votre voyage vers la monétisation sur YouTube ! Le monde de la création de contenu vous attend !</b></p>
+                </div>
+            </div>
+			<div class="item" onclick="toggleDescription('cracker')">
+                <center><h3>Formation pour cracker les applications payentes</h3></center>
+                <div class="item-description" id="cracker">
+                    <img src="C:\Users\gasto\Documents\Mon site Web\cra.JPG" width="550" alt="cracker les applications payentes">
+                    <p><b> Formation : Cracking des Applications Payantes </b>
+<br>
+<br>
+Découvrez notre formation spécialisée dans le cracking des applications payantes ! Apprenez à contourner 
+les systèmes de sécurité et à accéder aux fonctionnalités premium de diverses applications. Cette formation vous 
+permettra de maîtriser les techniques de cracking sur :
+<br>
+<br>
+<b>- Applications VIP</b>: Débloquez des contenus exclusifs et des fonctionnalités avancées.  
+<br>
+<br>
+<b>- Applications de Chatbots</b> :Explorez et personnalisez les interfaces de chat pour optimiser l'interaction utilisateur. 
+<br>
+<br> 
+<b>- Applications d'Intelligence Artificielle</b> : Accédez à des outils et algorithmes premium pour vos projets IA.
+<br>
+<br>  
+<b>- Applications de Gaming</b> : Apprenez à cracker des jeux pour débloquer des niveaux, des objets et des ressources spéciales.
+<br>
+<br>  
+<b>- Applications de Paris Sportifs</b> : Découvrez les techniques pour exploiter pleinement les plateformes de
+ paris, donnant ainsi un avantage dans vos stratégies.
+<br>
+<br>
+<b> Rejoignez-nous et accédez à des techniques avancées qui vous permettront de naviguer dans le monde des applications
+ payantes avec aisance. Préparez-vous à devenir un expert dans le domaine du cracking avec notre formation intensive et pratique !</b> 
+<br>
+<br>
+<b> Développez vos compétences et explorez les possibilités offertes par ces applications grâce à notre formation ! </b></p>
+					</div>
+					</div>
+            <div class="item" onclick="toggleDescription('tiktok')">
+                <center><h3>Formation TikTok</h3></center>
+                <div class="item-description" id="tiktok">
+                    <img src="C:\Users\gasto\Documents\Mon site Web\tik.JPG" width="550" alt="Formation TikTok">
+                    <p><b>Formation TikTok 100% Pratique - Devenez Star de TikTok en Afrique ! </b>
+<br>
+<br>
+Vous rêvez de créer un contenu viral sur TikTok et de gagner de l'argent ? Rejoignez notre *formation TikTok 100% pratique*
+ pour apprendre à transformer votre passion en une véritable source de revenus !
+<br>
+<br>
+<b>📱 Ce que vous apprendrez:</b>
+<br>
+<br>
+<b>- Créer un compte TikTok monétisable</b>: Suivez nos instructions simples pour créer un compte qui attirera les abonnés
+ et générera des revenus en Afrique.  
+ <br>
+<br>
+<b>- Écriture de scripts captivants</b>: Apprenez à rédiger des scripts accrocheurs qui feront briller vos vidéos
+ et captiveront votre audience. 
+<br>
+<br> 
+<b>- Publication stratégique</b>: Découvrez comment publier vos vidéos au bon moment pour maximiser vos vues et vos likes. 
+<br>
+<br> 
+<b>- Atteindre 10k abonnés en 4 mois </b>: Obtenez nos conseils et astuces pour atteindre rapidement 10 000 abonnés et entrer
+ dans le programme partenaire TikTok, vous permettant de commencer à gagner de l'argent !
+<br>
+<br>
+<b>🎓 Pourquoi choisir notre formation ?</b>
+<br>
+<br>
+Cette formation est 100% pratique, vous assurant d'appliquer tout ce que vous apprenez immédiatement. Que vous soyez
+ débutant ou que vous souhaitiez améliorer votre stratégie, notre formation est conçue pour vous propulser vers le succès.
+<br>
+<br>
+<b>👉 Inscrivez-vous dès maintenant et commencez votre aventure TikTok ! Le succès et la monétisation vous attendent !</b></p>
+                </div>
+            </div>
+            <div class="item" onclick="toggleDescription('paypal')">
+                <center><h3>Formation création des Comptes PayPal</h3></center>
+                <div class="item-description" id="paypal">
+                    <img src="C:\Users\gasto\Documents\Mon site Web\can.PNG" alt="Formation PayPal">
+                    <p>Création de comptes PayPal vérifiés et adaptés pour l'Afrique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section class="content">
+        <center><h2>SERVICES</h2></center>
+        <div class="items">
+            <div class="item" onclick="toggleDescription('community-manager')">
+                <center><h3>Community Manager</h3></center>
+                <div class="item-description" id="community-manager">
+                    <img src="C:\Users\gasto\Documents\Mon site Web\R.JFIF" alt="Community Manager">
+                    <p><b> 🌟 Services de Community Management - Boostez votre Présence en Ligne ! 🌟</b>
+<br>
+<br>
+En tant que community manager expérimenté, je vous propose une gamme complète de services pour gérer et dynamiser
+ votre présence sur les réseaux sociaux.
+<br>
+<br>
+<b>✨ Ce que j'offre :</b> 
+<br>
+<br>
+<b>- Gestion des Réseaux Sociaux</b>: Je prends en charge l'ensemble de vos profils sur différentes plateformes pour garantir 
+une communication cohérente et engageante. 
+<br>
+<br> 
+<b>- Modération et Gestion de la Communauté</b>: Je veille à l'interaction avec votre audience en répondant aux commentaires
+ et messages, tout en maintenant une atmosphère positive et respectueuse.  
+ <br>
+<br>
+<b>- Création de Contenu</b>: J'élabore du contenu attrayant et pertinent qui capte l’attention de votre public, incluant
+ des visuels, vidéos et publications adaptées à votre marque. 
+<br>
+<br> 
+<b>- Stratégie de Communication</b>:Ensemble, nous développerons une stratégie sur mesure pour atteindre vos objectifs 
+et maximiser l'impact de votre message.  
+<br>
+<br>
+<b>- Campagnes Publicitaires</b> : Je conçois et mets en œuvre des campagnes pour promouvoir vos services ou produits, en ciblant
+ efficacement votre audience souhaitée.
+<br>
+<br>
+<b>🚀 Pourquoi travailler avec moi ?</b>
+Avec mon approche professionnelle et ma passion pour le digital, je m'engage à améliorer votre notoriété, à augmenter 
+votre engagement et à transformer vos abonnés en clients fidèles. 
+<br>
+<br>
+<b>👉 Contactez-moi dès aujourd'hui pour discuter de la manière dont je peux vous aider à réussir sur les réseaux sociaux !
+ Votre communauté vous attend ! 🌈</b></p>
+                </div>
+            </div>
+			<div class="item" onclick="toggleDescription('canva pro a vie')">
+                <center><h3>canva pro a vie </h3></center>
+                <div class="item-description" id="canva pro a vie">
+                    <img src="C:\Users\gasto\Documents\Mon site Web\canca.JPG" width="550" alt="canva pro a vie">
+                    <p><b>🌟 Offre Spéciale : Compte Canva Pro À Vie 100% Gratuit ! 🎉✨</b>
+					<br>
+<br>
+Profitez d'une offre exceptionnelle ! Je vous offre un compte Canva Pro à vie entièrement gratuit ! 🚀 
+
+Avec ce compte, vous aurez accès à des milliers de modèles, d'éléments graphiques, et d'outils avancés pour 
+créer des affiches percutantes, des miniatures attrayantes et bien plus encore. Que vous soyez un créateur de
+ contenu, un entrepreneur ou simplement passionné de design, cette offre est faite pour vous !
+<br>
+<br>
+<b>Ce que vous obtiendrez :</b>
+<br>
+<br>
+- Accès illimité aux fonctionnalités Canva Pro
+<br>
+- Des outils de design professionnels à portée de main
+<br>
+- La possibilité de créer des visuels époustouflants en toute simplicité
+<br>
+<br>
+Ne manquez pas cette chance  Faites briller vos projets avec des designs de qualité professionnelle !
+<br>
+<br>
+<b>Saisissez cette offre avant qu'elle ne disparaisse ! </b></p>
+					</div>
+					</div>
+            <div class="item" onclick="toggleDescription('copywriter')">
+                <center><h3>Copywriter</h3></center>
+                <div class="item-description" id="copywriter">
+                    <img src="C:\Users\gasto\Documents\Mon site Web\copy.JPG "  width="550" alt="Copywriter">
+                    <p><b> Services de Copywriting - Transformez vos Idées en Mots Impactants !</b> 
+<br>
+<br>
+En tant que copywriter passionné, je propose un éventail de services pour optimiser votre communication écrite et attirer votre audience.
+<br>
+<br>
+<b> Ce que j'offre :</b>
+<br>
+<br>  
+<b>- Rédaction de Pages de Vente </b>: Création de pages convaincantes qui augmentent vos conversions et incitent à l'action.
+<br>
+<br>  
+<b>- E-mails Marketing</b> : Rédaction d'e-mails engageants qui capturent l'attention de vos lecteurs et les incitent à passer à l'action. 
+<br>
+<br> 
+<b>- Contenu pour Réseaux Sociaux</b> : Élaboration de publications percutantes et pertinentes pour renforcer votre présence sur les 
+plateformes sociales.  
+<br>
+<br>
+<b>- Articles de Blog</b> : Création de contenus informatifs et captivants pour établir votre expertise et fidéliser votre audience.
+<br>
+<br>  
+<b>- Contenu SEO</b> : Optimisation de vos textes pour améliorer votre visibilité sur les moteurs de recherche et attirer un trafic ciblé.
+<br>
+<br>  
+<b>- Scripts pour Vidéos et Podcasts</b> : Rédaction de scripts engageants qui retiennent l'attention de votre audience et transmettent 
+votre message clairement.  
+<br>
+<br>
+<b>- Création de Slogans et Messages Publicitaires</b> : Élaboration de phrases accrocheuses qui marquent les esprits et renforcent 
+votre image de marque.
+<br>
+<br>
+<b>Pourquoi faire appel à moi ?</b>
+<br>
+<br> 
+Avec ma créativité et mon expertise en rédaction, je m'engage à donner vie à votre vision et à faire passer efficacement
+ votre message, tout en touchant le cœur de votre audience.
+<br>
+<br>
+<b> Contactez-moi dès aujourd'hui pour discuter de vos projets et découvrir comment je peux vous aider à briller
+ avec des mots ! Ensemble, faisons de votre communication un véritable atout ! </b></p>
+                </div>
+            </div>
+            <div class="item" onclick="toggleDescription('tiktok-afrique')">
+                <center><h3>Création de Compte TikTok Monétisé</h3></center>
+                <div class="item-description" id="tiktok-afrique">
+                    <img src="C:\Users\gasto\Documents\Mon site Web\tok.JPG " alt="Compte TikTok">
+                    <p>Création et configuration de comptes TikTok prêts pour la monétisation en Afrique.</p>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="content contact">
+        <h2>Contactez-moi</h2>
+        <form action="votre-script.php" method="post">
+            <label for="service">Formation ou Service désiré :</label>
+            <input type="text" id="service" name="service" required>
+
+            <label for="name">Nom et Prénom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="country">Pays de Résidence :</label>
+             <input type="text" id="name" name="name" required>
+			 <label for="phone">Numéro de Téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Adresse Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+           <center><button type="submit">Envoyer</button></center>
+        </form>
+        
+        <div class="contact-info">
+                 <p>Chaîne YouTube : <a href="https://youtube.com/@gastonn3835?si=j2SCfH4ofcfPVwjN" target="_blank">Lien vers ma chaîne</a></p>
+            <p>Compte TikTok : <a href="https://www.tiktok.com/@gastonastuces?_t=ZN-8w1J6oratcM&_r=1" target="_blank">Lien vers mon compte</a></p>
+              </div>
+    </section>
+	<footer>
+	<p>contactez-moi via :
+	<a href="mailto:nkayamoukalagaston@gmail.com"> Email </a> /
+	<a href="https://wa.me/message/RSXFPFXQI27WC1"> Whatsapp  </a>
+	</p>
+	</footer>
+	<footer>
+	<p>&copy; 2025 GASTON N3 SERVICES. Tous droits réservés.</p>
+	</footer>
+<script>
+        function toggleDescription(id) {
+            var element = document.getElementById(id);
+            element.style.display = (element.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>
